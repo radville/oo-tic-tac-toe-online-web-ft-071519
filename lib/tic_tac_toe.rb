@@ -69,9 +69,10 @@ class TicTacToe
       if win.each {|el| @board[el] == "X" }.all?
         true
       elsif win.each {|el| @board[el] == "O" }.all?
-        true
+                  binding.pry 
+      
+          true
       else
-        binding.pry 
         false
       end
     end
