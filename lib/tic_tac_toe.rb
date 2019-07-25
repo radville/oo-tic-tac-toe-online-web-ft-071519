@@ -76,10 +76,10 @@ class TicTacToe
     won
   end
   
-  def full
+  def full?
     a = [0..9]
     if a.all? { |el| position_taken?(el)}
-      binding.pry
+      # binding.pry
       true
     else
       false
