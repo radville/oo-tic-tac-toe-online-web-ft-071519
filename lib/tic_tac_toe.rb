@@ -68,8 +68,9 @@ class TicTacToe
     WIN_COMBINATIONS.each do |win|
       win.each do |el|
         position_taken(el)
+              binding.pry
+
       end
-      binding.pry
     end
   end
   
