@@ -112,7 +112,12 @@ class TicTacToe
   end
   
   def play
-    
+    if !won?
+      turn
+    elsif won?
+      "Congratulations, #{winner}!"
+    elsif draw?
+      "It ended in a draw"
   end
   
 end
