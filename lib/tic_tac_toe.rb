@@ -74,7 +74,6 @@ class TicTacToe
         return win
       else
         false
-
       end
     end
   end
