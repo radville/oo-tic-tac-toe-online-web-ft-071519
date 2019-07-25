@@ -68,6 +68,8 @@ class TicTacToe
     WIN_COMBINATIONS.each do |win|
       if win.each { |el| position_taken?(el)}.all?
         win.each { |el| position_taken?(el)}
+      else
+        false
       end
     end
   end
