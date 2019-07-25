@@ -61,12 +61,12 @@ class TicTacToe
     position = input_to_index(index)
     if valid_move?(position)
       @board[position] = current_player
-      position
     else
       puts "Choose a position between 1-9."
       index = gets.chomp
       position = input_to_index(index)
     end
+    position
   end
   
 end
