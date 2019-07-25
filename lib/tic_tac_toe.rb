@@ -40,6 +40,7 @@ class TicTacToe
     if position < 9 && !position_taken?(position)
       true
     end
+    binding.pry
   end
   
   def turn_count
