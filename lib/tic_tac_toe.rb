@@ -78,9 +78,7 @@ class TicTacToe
   
   def full?
     full = false
-    if (0..9).to_a.all? do |num| 
-      position_taken?(num)
-    end
+    if (0..9).to_a.all? { |num| position_taken?(num) }
       full = true
     end
     full
