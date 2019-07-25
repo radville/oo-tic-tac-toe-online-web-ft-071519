@@ -118,6 +118,7 @@ class TicTacToe
       "Congratulations, #{winner}!"
     elsif draw?
       "It ended in a draw"
+    end
   end
   
 end
