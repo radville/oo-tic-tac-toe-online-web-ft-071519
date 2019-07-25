@@ -64,4 +64,11 @@ class TicTacToe
     end
   end
   
+  def won?
+    if @board.include?(WIN_COMBINATIONS)
+    else
+      false
+    end
+  end
+  
 end
