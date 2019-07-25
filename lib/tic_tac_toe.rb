@@ -71,7 +71,7 @@ class TicTacToe
       elsif win.map {|el| @board[el] == "O" }.all?
         return win
       else
-        return false
+        return nil
       end
     end
   end
