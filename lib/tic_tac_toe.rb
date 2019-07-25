@@ -80,7 +80,7 @@ class TicTacToe
     if valid_move?(position)
       @board[position] = current_player
     else
-      turn
+      ?
     end
   end
   
