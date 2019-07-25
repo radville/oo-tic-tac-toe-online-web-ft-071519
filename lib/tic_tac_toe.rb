@@ -66,6 +66,7 @@ class TicTacToe
   
   def won?
     if @board.detect(WIN_COMBINATIONS)
+      binding.pry
     else
       false
     end
