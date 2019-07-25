@@ -63,6 +63,7 @@ class TicTacToe
       @board[position] = current_player
     else
       puts "Choose a position between 1-9."
+      display_board
       index = gets.chomp
       position = input_to_index(index)
     end
