@@ -62,6 +62,7 @@ class TicTacToe
     if valid_move?(position)
       @board[position] = current_player
     else
+      binding.pry
       turn
     end
   end
