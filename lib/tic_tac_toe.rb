@@ -67,7 +67,7 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.each do |win|
       if win.map { |el| position_taken?(el)}.all?
-        win
+        win.map { |el| position_taken?(el)}
       end
     end
   end
