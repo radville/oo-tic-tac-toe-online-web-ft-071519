@@ -62,11 +62,8 @@ class TicTacToe
     index = gets.strip
     position = input_to_index(index)
     if valid_move?(position)
-      # binding.pry
       @board[position] = current_player
     else
-      # binding.pry
-
       turn
     end
   end
