@@ -57,6 +57,7 @@ class TicTacToe
   def turn
     position = 15
     until valid_move?(position)
+    binding.pry
       puts "Choose a position between 1-9."
       display_board
       index = gets.chomp
