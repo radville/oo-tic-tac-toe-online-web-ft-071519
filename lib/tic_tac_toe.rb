@@ -40,6 +40,8 @@ class TicTacToe
     if position < 9 && !position_taken?(position)
       return true
     end
+          binding.pry
+
   end
   
   def turn_count
@@ -62,7 +64,6 @@ class TicTacToe
     if valid_move?(position)
       @board[position] = current_player
     else
-      binding.pry
       turn
     end
   end
