@@ -58,9 +58,10 @@ class TicTacToe
     position = 15
     until valid_move?(position)
     binding.pry
-      puts "Choose a position between 1-9."
       display_board
       index = gets.chomp
+            puts "Choose a position between 1-9."
+
       position = input_to_index(index)
     end
     @board[position] = current_player
