@@ -65,7 +65,7 @@ class TicTacToe
   end
   
   def won?
-    if @board.each_with_index do |board|
+    if @board.each_with_index do |board, index|
       # (WIN_COMBINATIONS)
       binding.pry
       end
