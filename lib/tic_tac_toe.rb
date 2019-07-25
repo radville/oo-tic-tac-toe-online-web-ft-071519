@@ -79,7 +79,6 @@ class TicTacToe
   def full?
     full = false
     if (0..9).to_a.all? do |num| 
-      binding.pry
       position_taken?(num)
     end
       full = true
