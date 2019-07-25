@@ -77,6 +77,6 @@ class TicTacToe
   #     position = input_to_index(index)
   #   end
   #   position
-  # end
+  end
   
 end
