@@ -67,7 +67,7 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.each do |win|
       win.each do |el|
-        position_taken(el)
+        position_taken?(el)
               binding.pry
 
       end
