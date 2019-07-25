@@ -55,30 +55,29 @@ class TicTacToe
   end
   
   def turn
-    # position = 15
-    puts "Choose a position between 1-9."
-    display_board
-    index = gets.chomp
-    position = input_to_index(index)
-    until valid_move?(position)
-      index = gets.chomp
-      position = input_to_index(index)
-    end
-    @board[position] = current_player
-  end
   #   puts "Choose a position between 1-9."
   #   display_board
   #   index = gets.chomp
   #   position = input_to_index(index)
-  #   if valid_move?(position)
-  #     @board[position] = current_player
-  #   else
-  #     puts "Choose a position between 1-9."
-  #     display_board
+  #   until valid_move?(position)
   #     index = gets.chomp
   #     position = input_to_index(index)
   #   end
-  #   position
+  #   @board[position] = current_player
   # end
+    puts "Choose a position between 1-9."
+    display_board
+    index = gets.chomp
+    position = input_to_index(index)
+    if valid_move?(position)
+      @board[position] = current_player
+    else
+      puts "Choose a position between 1-9."
+      display_board
+      index = gets.chomp
+      position = input_to_index(index)
+    end
+    position
+  end
   
 end
