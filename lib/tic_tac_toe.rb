@@ -65,6 +65,14 @@ class TicTacToe
   #   end
   #   @board[position] = current_player
   # end
+  
+  
+  # ask for player input
+# grab that input
+# convert that input to reflect correct array index
+# is the move is valid, make the move
+# if the move is not valid, repeat the process - start a new turn
+
     puts "Choose a position between 1-9."
     display_board
     index = gets.chomp
@@ -72,12 +80,8 @@ class TicTacToe
     if valid_move?(position)
       @board[position] = current_player
     else
-      puts "Choose a position between 1-9."
-      display_board
-      index = gets.chomp
-      position = input_to_index(index)
+      turn
     end
-    position
   end
   
 end
