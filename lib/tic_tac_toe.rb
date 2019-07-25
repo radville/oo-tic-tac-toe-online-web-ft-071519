@@ -55,7 +55,7 @@ class TicTacToe
   end
   
   def turn
-    position = nil
+    position = 15
     until valid_move?(position)
       puts "Choose a position between 1-9."
       display_board
