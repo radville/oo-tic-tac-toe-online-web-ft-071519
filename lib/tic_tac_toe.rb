@@ -1,6 +1,8 @@
 require "pry"
 
 class TicTacToe
+  attr_reader :won
+  
   def initialize
     @board = Array.new(9, " ")
   end
@@ -65,12 +67,12 @@ class TicTacToe
   end
   
   def won?
-    won = false
+    @won = false
     WIN_COMBINATIONS.each do |win|
       if win.map {|el| @board[el] == "X" }.all?
-        won = win
+        @won = win
       elsif win.map {|el| @board[el] == "O" }.all?
-        won = win
+        @won = win
       end
     end
     won
@@ -98,6 +100,10 @@ class TicTacToe
     else
       false
     end
+  end
+  
+  def winner
+      @board[@won[0]]
   end
   
 end
