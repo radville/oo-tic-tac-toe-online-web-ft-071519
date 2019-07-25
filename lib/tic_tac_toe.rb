@@ -39,9 +39,9 @@ class TicTacToe
   def valid_move?(position)
     if position < 9 && !position_taken?(position)
       return true
+    else
+      return false
     end
-          binding.pry
-
   end
   
   def turn_count
