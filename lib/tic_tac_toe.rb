@@ -67,8 +67,9 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.each do |win|
       if win.map {|el| @board[el] == "X" }.all?
-        end
-        
+        true
+      elsif win.map {|el| @board[el] == "O" }.all?
+        true
       else
         false
       end
