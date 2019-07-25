@@ -67,6 +67,7 @@ class TicTacToe
   def won?
     if @board.each_with_index do |board, index|
       # (WIN_COMBINATIONS)
+      if position_taken?(index)
       binding.pry
       end
     else
