@@ -77,7 +77,11 @@ class TicTacToe
   end
   
   def full
-    [0..9].all? { |el| position_taken?(el)}
+    if [0..9].all? { |el| position_taken?(el)}
+      #something
+    else
+      false
+    end
   end
   
 end
